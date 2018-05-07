@@ -92,10 +92,10 @@ zkserver
 8. Click the "Apply and Close" button
 
 # Resources
-[What is Kafka and Why is popular?](https://techbeacon.com/what-apache-kafka-why-it-so-popular-should-you-use-it)
-[Apache ZooKeeper](https://zookeeper.apache.org/)
-[Apache Kafka](https://kafka.apache.org/)
-[Introduction to Apache Kafka by James Ward (Youtube Video)](https://www.youtube.com/watch?v=UEg40Te8pnE)
-[Lessons learned from Kafka in production by Tim Berglund of Confluent (Youtube video](https://www.youtube.com/watch?v=1vLMuWsfMcA)
-[What is Zookeeper?](https://www.youtube.com/watch?v=Kgf9EjTNucM)
-[xcopy command](https://superuser.com/a/653928)
+* [What is Kafka and Why is popular?](https://techbeacon.com/what-apache-kafka-why-it-so-popular-should-you-use-it)
+* [Apache ZooKeeper](https://zookeeper.apache.org/)
+* [Apache Kafka](https://kafka.apache.org/)
+* [Introduction to Apache Kafka by James Ward (Youtube Video)](https://www.youtube.com/watch?v=UEg40Te8pnE)
+* [Lessons learned from Kafka in production by Tim Berglund of Confluent (Youtube video](https://www.youtube.com/watch?v=1vLMuWsfMcA)
+* [What is Zookeeper?](https://www.youtube.com/watch?v=Kgf9EjTNucM)
+* [xcopy command](https://superuser.com/a/653928)
