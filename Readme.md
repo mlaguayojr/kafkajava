@@ -32,7 +32,7 @@ Kafka partitions topics into a structured log of records. Each partition is an o
 * Realtime processing of records
 * Distributed Partitions of records
 * Low-latency
-* Very maleable in use
+* Versatile
 
 All in all, if you have a project that deals with big data or a collection of information and you want a method of organizing, or pruning, Kafka can be a resource if your data comes from varying sources/environments.
 
@@ -69,19 +69,27 @@ for /r %i in (*.jar) do xcopy /Y "%i" jars
 ```
 Running the last command will prompt you whether "jars" is a file or a directory. Enter D for directory and hit enter. This will find all the jars that gradle compiled and move them to the "jars" folder that you just made.
 
-## Start Kafka Server
-In command prompt:
+## Configure
+Before we test the Producer and Consumer, we need to create our topic first. In Command Prompt:
 ```
 cd C:\kafka
-bin\windows\kafka-server-start.bat config\server.properties
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic "JavaTest"
 ```
+
 ## Start Zookeeper Server
 In command prompt:
 ```
 zkserver
 ```
 
-### Inside Eclipse
+## Start Kafka Server
+In command prompt:
+```
+cd C:\kafka
+bin\windows\kafka-server-start.bat config\server.properties
+```
+
+## Inside Eclipse
 1. Create a new Java Project
 2. Navigate to your project's folder in the "Package Explorer" pane.
 3. Right-click your project
@@ -90,6 +98,8 @@ zkserver
 6. Click the "Add External JARS..." button
 7. Navigate to "C:\kafka\jars" and import all the jar files
 8. Click the "Apply and Close" button
+
+Make sure that DemoProducer and DemoConsumer are using the same topic "JavaTest" (or whichever topic you decided to create).
 
 # Resources
 * [What is Kafka and Why is popular?](https://techbeacon.com/what-apache-kafka-why-it-so-popular-should-you-use-it)
