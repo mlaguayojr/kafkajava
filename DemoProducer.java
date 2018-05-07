@@ -34,6 +34,7 @@ public class DemoProducer {
 		// props.put("bootstrap.servers", "localhost:9092,10.0.0.24:9092");
 
 		props.put("bootstrap.servers", "localhost:9092");
+		props.put("auto.create.topics.enable", true); // If set to true, Kafka will auto create the topic. If set to false, make sure the topic is created by using the step provided in the read me.
 		props.put("acks", "all");
 		props.put("retries", 1);
 		props.put("batch.size", 16384);
