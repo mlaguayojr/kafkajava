@@ -40,7 +40,7 @@ All in all, if you have a project that deals with big data or a collection of in
 Zookeeper is the backend service / container for Kafka. With Zookeeper, Kafka will have a Leader-Follower architecture making synchronization easy for clusters.
 
 # Installation
-I'm not going to lie - go grab a ? of coffee -- this will take a while. This is also being done through Windows -- if you're on Linux, it's a lot easier...
+I'm not going to lie - go grab a cup of coffee -- this will take a while. This is also being done through Windows -- if you're on Linux, it's a lot easier...
 
 ## Dependencies
 * [Gradle](https://gradle.org/install/)
